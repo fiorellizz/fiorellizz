@@ -74,8 +74,19 @@ nav{
     transition: all 0.3s ease;
 }
 
+.btnprojects{
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .btn:hover{
-    background-color: #1e40af;
+    background-color: #21398a;
 }
 
 .container{
