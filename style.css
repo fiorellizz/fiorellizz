@@ -354,6 +354,11 @@ footer .column > a:hover{
     text-align: center;
 }
 
+.imgprojects{
+    width: 100%;
+    height: 50%;
+}
+
 @media (width < 900px){
     .nav-links{
         display: none;
