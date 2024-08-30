@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Comissão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simulador de Comissão</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Meta</th>
+                    <th>Real</th>
+                    <th>Projeção</th>
+                    <th>TKM</th>
+                    <th>Receita</th>
+                    <th>Comissão</th>
+                    <th>Premiação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-vendas">
+                <tr>
+                    <td>Pós</td>
+                    <td><input type="number" id="meta-pos" placeholder="Meta"></td>
+                    <td><input type="number" id="real-pos" placeholder="Real"></td>
+                    <td><p id="projecao-pos"></p></td>
+                    <td><input type="number" id="tkm-pos" placeholder="Tkt M."></td>
+                    <td><p id="receita-pos"></p></td>
+                    <td><p id="comissao-pos"></p></td>
+                    <td><p id="premiacao-pos"></p></td>
+                </tr>
+                <tr>
+                    <td>Controle</td>
+                    <td><input type="number" id="meta-controle" placeholder="Meta"></td>
+                    <td><input type="number" id="real-controle" placeholder="Real"></td>
+                    <td><p id="projecao-controle"></p></td>
+                    <td><input type="number" id="tkm-controle" placeholder="Tkt M."></td>
+                    <td><p id="receita-controle"></p></td>
+                    <td><p id="comissao-controle"></p></td>
+                    <td><p id="premiacao-controle"></p></td>
+                </tr>
+                <tr>
+                    <td>Fibra</td>
+                    <td><input type="number" id="meta-fibra" placeholder="Meta"></td>
+                    <td><input type="number" id="real-fibra" placeholder="Real"></td>
+                    <td><p id="projecao-fibra"></p></td>
+                    <td><input type="number" id="tkm-fibra" placeholder="Tkt M."></td>
+                    <td><p id="receita-fibra"></p></td>
+                    <td><p id="comissao-fibra"></p></td>
+                    <td><p id="premiacao-fibra"></p></td>
+                </tr>
+                <tr>
+                    <td>Delta +</td>
+                    <td><input type="number" id="meta-delta" placeholder="Meta"></td>
+                    <td><input type="number" id="real-delta" placeholder="Real"></td>
+                    <td><p id="projecao-delta"></p></td>
+                    <td><input type="number" id="tkm-delta" placeholder="Tkt M."></td>
+                    <td><p id="receita-delta"></p></td>
+                    <td><p id="comissao-delta"></p></td>
+                    <td><p id="premiacao-delta"></p></td>
+                </tr>
+                <tr>
+                    <td>N.N</td>
+                    <td><input type="number" id="meta-nn" placeholder="Meta"></td>
+                    <td><input type="number" id="real-nn" placeholder="Real"></td>
+                    <td><p id="projecao-nn"></p></td>
+                    <td><input type="number" id="tkm-nn" placeholder="Tkt M."></td>
+                    <td><p id="receita-nn"></p></td>
+                    <td><p id="comissao-nn"></p></td>
+                    <td><p id="premiacao-nn"></p></td>
+                </tr>
+                <tr>
+                    <td>Sva</td>
+                    <td><input type="number" id="meta-sva" placeholder="Meta"></td>
+                    <td><input type="number" id="real-sva" placeholder="Real"></td>
+                    <td><p id="projecao-sva"></p></td>
+                    <td><input type="number" id="tkm-sva" placeholder="Tkt M."></td>
+                    <td><p id="receita-sva"></p></td>
+                    <td><p id="comissao-sva"></p></td>
+                    <td><p id="premiacao-sva"></p></td>
+                </tr>
+                <tr>
+                    <td>Terminal 1x a 6x</td>
+                    <td><input type="number" id="meta-terminal1" placeholder="Meta"></td>
+                    <td><input type="number" id="real-terminal1" placeholder="Real"></td>
+                    <td><p id="projecao-terminal1"></p></td>
+                    <td><input type="number" id="tkm-terminal1" placeholder="Tkt M."></td>
+                    <td><p id="receita-terminal1"></p></td>
+                    <td><p id="comissao-terminal1"></p></td>
+                    <td><p id="premiacao-terminal1"></p></td>
+                </tr>
+                <tr>
+                    <td>Terminal 7x a 10x</td>
+                    <td><input type="number" id="meta-terminal2" placeholder="Meta"></td>
+                    <td><input type="number" id="real-terminal2" placeholder="Real"></td>
+                    <td><p id="projecao-terminal2"></p></td>
+                    <td><input type="number" id="tkm-terminal2" placeholder="Tkt M."></td>
+                    <td><p id="receita-terminal2"></p></td>
+                    <td><p id="comissao-terminal2"></p></td>
+                    <td><p id="premiacao-terminal2"></p></td>
+                </tr>
+                <tr>
+                    <td>Acessório</td>
+                    <td><input type="number" id="meta-acessorio" placeholder="Meta"></td>
+                    <td><input type="number" id="real-acessorio" placeholder="Real"></td>
+                    <td><p id="projecao-acessorio"></p></td>
+                    <td><input type="number" id="tkm-acessorio" placeholder="Tkt M."></td>
+                    <td><p id="receita-acessorio"></p></td>
+                    <td><p id="comissao-acessorio"></p></td>
+                    <td><p id="premiacao-acessorio"></p></td>
+                </tr>
+                <!--
+                <tr>
+                    
+                    <td>Total</td>
+                    <td><input type="number" id="meta-total" placeholder="Meta"></td>
+                    <td><input type="number" id="real-total" placeholder="Real"></td>
+                    <td><p id="projecao-total"></p></td>
+                    <td><input type="number" id="tkm-acessorio" placeholder="Tkt M."></td>
+                    <td><p id="receita-acessorio"></p></td>
+                    <td><p id="comissao-total"></p></td>
+                    <td><p id="premiacao-total"></p></td>
+
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+        <div class="options-container">
+            <div>
+                <label for="indicador">Função:</label>
+                <select id="indicador">
+                    <option value="vendedor">Vendedor</option>
+                    <option value="gerenteloja">Gerente de Loja</option>
+                    <option value="gerentecomercial">Gerente Comercial</option>
+                    <option value="gerenteregional">Gerente Regional</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="acelindividualmovel">TFP Indiv Móvel:</label>
+                <select id="acelindividualmovel">
+                    <option value="0">Escolha</option>
+                    <option value="60">60%</option>
+                    <option value="30">30%</option>
+                    <option value="0">0%</option>
+                    <option value="-30">-30%</option>
+                    <option value="-60">-60%</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="acelequipemovel">TFP Eqp Móvel:</label>
+                <select id="acelequipemovel">
+                    <option value="0">Escolha</option>
+                    <option value="20">20%</option>
+                    <option value="15">15%</option>
+                    <option value="0">0%</option>
+                    <option value="-15">-15%</option>
+                    <option value="-20">-20%</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="acelindividualfixa">TFP Indiv Fixa:</label>
+                <select id="acelindividualfixa">
+                    <option value="0">Escolha</option>
+                    <option value="60">60%</option>
+                    <option value="30">30%</option>
+                    <option value="0">0%</option>
+                    <option value="-30">-30%</option>
+                    <option value="-60">-60%</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="acelequipefixa">TFP Eqp Fixa:</label>
+                <select id="acelequipefixa">
+                    <option value="0">Escolha</option>
+                    <option value="20">20%</option>
+                    <option value="15">15%</option>
+                    <option value="0">0%</option>
+                    <option value="-15">-15%</option>
+                    <option value="-20">-20%</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button onclick="calcularComissao()">Calcular Comissão</button>
+        
+        <h2 id="resultado"></h2>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

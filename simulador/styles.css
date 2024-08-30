@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/images/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    max-height: 90vh; /* Definir altura máxima para evitar crescimento vertical */
+    overflow-y: auto; /* Permitir rolagem vertical se necessário */
+}
+
+h2 {
+    font-size: 1.2em; /* Reduzir tamanho do título */
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 5px;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="number"], select, button {
+    width: 80%;
+    padding: 5px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.options-container div {
+    flex: 1;
+    min-width: 120px;
+}
+
+button {
+    padding: 8px;
+    font-size: 0.85em;
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+}
+
+h2#resultado {
+    font-size: 1em; /* Reduzir tamanho do resultado */
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+    
+    input[type="number"], select {
+        width: 80%;
+    }
+
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
