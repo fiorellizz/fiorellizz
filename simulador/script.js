@@ -1,6 +1,7 @@
 function calcularComissao() {
     const indicador = document.getElementById("indicador").value;
 
+    //Porcentagens
     const porcentagemComissao = {
         vendedor: {
             pos: [0.155, 0.095, 0.025],
@@ -66,9 +67,25 @@ function calcularComissao() {
         receita = tkm * real;
 
         if (indicador === 'vendedor') {
-            comissao = receita * 0.025; // 2,5% da receita
+            if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
+                comissao = receita * 0.025; // 2,5% da receita
+            } else if (servico === 'terminal1') {
+                comissao = receita * 0.0025; // 0,25% da receita
+            } else if (servico === 'terminal2') {
+                comissao = receita * 0.0015; // 0,15% da receita
+            } else if (servico === 'acessorio') {
+                comissao = receita * 0.025; // 2,5% da receita
+            }
         } else if (indicador === 'gerenteloja') {
-            comissao = receita * 0.02; // 2% da receita
+            if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
+                comissao = receita * 0.02; // 2% da receita
+            } else if (servico === 'terminal1') {
+                comissao = receita * 0.0018; // 0,18% da receita
+            } else if (servico === 'terminal2') {
+                comissao = receita * 0.0011; // 0,11% da receita
+            } else if (servico === 'acessorio') {
+                comissao = receita * 0.0088; // 0,88% da receita
+            }
         } else {
             comissao = 0; // 0% para gerentes comerciais e regionais
         }
