@@ -115,17 +115,18 @@ function calcularComissao() {
             }
         }
 
-        let comissaoPremiacaoServico = comissao + premiacao;
+        
+        let premiacaoParaAcelerar = premiacao;
 
         // Aplicando aceleradores individuais e de equipe para os serviços móveis
         if (["pos", "controle", "delta", "nn", "sva"].includes(servico)) {
             const acelIndividualMovel = parseFloat(document.getElementById("acelindividualmovel").value) || 0;
             const acelEquipeMovel = parseFloat(document.getElementById("acelequipemovel").value) || 0;
 
-            const valorAcelIndividualMovel = comissaoPremiacaoServico * (acelIndividualMovel / 100);
-            const valorAcelEquipeMovel = comissaoPremiacaoServico * (acelEquipeMovel / 100);
+            const valorAcelIndividualMovel = premiacaoParaAcelerar * (acelIndividualMovel / 100);
+            const valorAcelEquipeMovel = premiacaoParaAcelerar * (acelEquipeMovel / 100);
 
-            comissaoPremiacaoServico += valorAcelIndividualMovel + valorAcelEquipeMovel;
+            premiacaoParaAcelerar += valorAcelIndividualMovel + valorAcelEquipeMovel;
         }
 
         // Aplicando aceleradores individuais e de equipe para "Fibra"
@@ -133,11 +134,13 @@ function calcularComissao() {
             const acelIndividualFixa = parseFloat(document.getElementById("acelindividualfixa").value) || 0;
             const acelEquipeFixa = parseFloat(document.getElementById("acelequipefixa").value) || 0;
 
-            const valorAcelIndividualFixa = comissaoPremiacaoServico * (acelIndividualFixa / 100);
-            const valorAcelEquipeFixa = comissaoPremiacaoServico * (acelEquipeFixa / 100);
+            const valorAcelIndividualFixa = premiacaoParaAcelerar * (acelIndividualFixa / 100);
+            const valorAcelEquipeFixa = premiacaoParaAcelerar * (acelEquipeFixa / 100);
 
-            comissaoPremiacaoServico += valorAcelIndividualFixa + valorAcelEquipeFixa;
+            premiacaoParaAcelerar += valorAcelIndividualFixa + valorAcelEquipeFixa;
         }
+
+        let comissaoPremiacaoServico = comissao + premiacaoParaAcelerar;
 
         comissaoReceita += comissao + premiacao;
         comissaoReceitaAcelerada += comissaoPremiacaoServico;
