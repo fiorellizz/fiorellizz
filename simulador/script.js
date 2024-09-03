@@ -50,6 +50,8 @@ function calcularComissao() {
     };
 
     const servicos = ["pos", "controle", "fibra", "delta", "nn", "sva", "terminal1", "terminal2", "acessorio"];
+    let apenasComissao = 0;
+    let apenasPremiacaoComAcelerador = 0;
     let comissaoReceita = 0;
     let comissaoReceitaAcelerada = 0;
 
@@ -142,6 +144,8 @@ function calcularComissao() {
 
         let comissaoPremiacaoServico = comissao + premiacaoParaAcelerar;
 
+        apenasComissao += comissao;
+        apenasPremiacaoComAcelerador += premiacaoParaAcelerar;
         comissaoReceita += comissao + premiacao;
         comissaoReceitaAcelerada += comissaoPremiacaoServico;
 
@@ -153,7 +157,7 @@ function calcularComissao() {
     });
 
     // Exibe o resultado final
-    document.getElementById("resultado").innerText = `Comissão + Premiação: R$ ${comissaoReceita.toFixed(2)}\nComissão + Premiação + TFP: R$ ${comissaoReceitaAcelerada.toFixed(2)}`;
+    document.getElementById("resultado").innerText = `Comissão: R$ ${apenasComissao.toFixed(2)}\nPremiação + TFP: R$ ${apenasPremiacaoComAcelerador.toFixed(2)}\nTotal Comissão + Premiação: R$ ${comissaoReceitaAcelerada.toFixed(2)}`;
 }
 
 document.addEventListener("keydown", function(event) {
