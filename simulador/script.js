@@ -62,7 +62,7 @@ function calcularComissao() {
         const real = parseFloat(document.getElementById(`real-${servico}`).value) || 0;
         const tkm = parseFloat(document.getElementById(`tkm-${servico}`).value) || 0;
         let produtividade = meta ? real / meta : 0;
-        let percent;
+        let percent = 0;
 
         let comissao = 0;
         let premiacao = 0;
@@ -73,34 +73,25 @@ function calcularComissao() {
         if (indicador === 'vendedor') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.025; // 2,5% da receita
-                percent = 2.5;
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0025; // 0,25% da receita
-                percent = 0.25;
             } else if (servico === 'terminal2') {
                 comissao = receita * 0.0015; // 0,15% da receita
-                percent = 0.15;
             } else if (servico === 'acessorio') {
                 comissao = receita * 0.025; // 2,5% da receita
-                percent = 2.5;
             }
         } else if (indicador === 'gerenteloja') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.02; // 2% da receita
-                percent = 2;
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0018; // 0,18% da receita
-                percent = 0.18;
             } else if (servico === 'terminal2') {
                 comissao = receita * 0.0011; // 0,11% da receita
-                percent = 0.11;
             } else if (servico === 'acessorio') {
                 comissao = receita * 0.0088; // 0,88% da receita
-                percent = 0.88;
             }
         } else {
             comissao = 0; // 0% para gerentes comerciais e regionais
-            percent = 0;
         }
 
         // Calcula a premiação com base na produtividade para o indicador selecionado
@@ -112,19 +103,25 @@ function calcularComissao() {
             if (indicador === 'gerentecomercial' || indicador === 'gerenteregional') {
                 if (produtividade >= 1.2) {
                     premiacao = receita * porcentagemComissao[indicador][servico][0];
+                    percent = porcentagemComissao[indicador][servico][0] * 100;
                 } else if (produtividade >= 1) {
                     premiacao = receita * porcentagemComissao[indicador][servico][1];
+                    percent = porcentagemComissao[indicador][servico][1] * 100;
                 } else if (produtividade >= 0.7) {
                     premiacao = receita * porcentagemComissao[indicador][servico][2];
+                    percent = porcentagemComissao[indicador][servico][2] * 100;
                 }
             } else {
                 // Calcula a premiação com base na produtividade para vendedor ou gerente de loja
                 if (produtividade >= 1.2) {
                     premiacao = receita * porcentagemComissao[indicador][servico][0];
+                    percent = porcentagemComissao[indicador][servico][0] * 100;
                 } else if (produtividade >= 1) {
                     premiacao = receita * porcentagemComissao[indicador][servico][1];
+                    percent = porcentagemComissao[indicador][servico][1] * 100;
                 } else if (produtividade >= 0.8) {
                     premiacao = receita * porcentagemComissao[indicador][servico][2];
+                    percent = porcentagemComissao[indicador][servico][2] * 100;
                 }
             }
         }
@@ -140,6 +137,13 @@ function calcularComissao() {
             const valorAcelIndividualMovel = premiacaoParaAcelerar * (acelIndividualMovel / 100);
             const valorAcelEquipeMovel = premiacaoParaAcelerar * (acelEquipeMovel / 100);
 
+            if (acelIndividualMovel !== 0){
+                percent = percent + (percent * (acelIndividualMovel / 100));
+                
+            } else if (acelEquipeMovel !== 0){
+                percent = percent + (percent * (acelEquipeMovel / 100));
+            }
+            
             premiacaoParaAcelerar += valorAcelIndividualMovel + valorAcelEquipeMovel;
         }
 
@@ -150,6 +154,12 @@ function calcularComissao() {
 
             const valorAcelIndividualFixa = premiacaoParaAcelerar * (acelIndividualFixa / 100);
             const valorAcelEquipeFixa = premiacaoParaAcelerar * (acelEquipeFixa / 100);
+
+            if(acelIndividualFixa !== 0){
+                percent = percent + (percent * (acelIndividualFixa / 100));
+            } else if (acelEquipeFixa !== 0){
+                percent = percent + (percent + (acelEquipeFixa / 100));
+            }
 
             premiacaoParaAcelerar += valorAcelIndividualFixa + valorAcelEquipeFixa;
         }
