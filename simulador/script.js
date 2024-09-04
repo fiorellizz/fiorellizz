@@ -50,6 +50,7 @@ function calcularComissao() {
     };
 
     const servicos = ["pos", "controle", "fibra", "delta", "nn", "sva", "terminal1", "terminal2", "acessorio"];
+    
     let apenasComissao = 0;
     let apenasPremiacaoComAcelerador = 0;
     let comissaoReceita = 0;
@@ -61,6 +62,7 @@ function calcularComissao() {
         const real = parseFloat(document.getElementById(`real-${servico}`).value) || 0;
         const tkm = parseFloat(document.getElementById(`tkm-${servico}`).value) || 0;
         let produtividade = meta ? real / meta : 0;
+        let percent;
 
         let comissao = 0;
         let premiacao = 0;
@@ -71,31 +73,41 @@ function calcularComissao() {
         if (indicador === 'vendedor') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.025; // 2,5% da receita
+                percent = 2.5;
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0025; // 0,25% da receita
+                percent = 0.25;
             } else if (servico === 'terminal2') {
                 comissao = receita * 0.0015; // 0,15% da receita
+                percent = 0.15;
             } else if (servico === 'acessorio') {
                 comissao = receita * 0.025; // 2,5% da receita
+                percent = 2.5;
             }
         } else if (indicador === 'gerenteloja') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.02; // 2% da receita
+                percent = 2;
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0018; // 0,18% da receita
+                percent = 0.18;
             } else if (servico === 'terminal2') {
                 comissao = receita * 0.0011; // 0,11% da receita
+                percent = 0.11;
             } else if (servico === 'acessorio') {
                 comissao = receita * 0.0088; // 0,88% da receita
+                percent = 0.88;
             }
         } else {
             comissao = 0; // 0% para gerentes comerciais e regionais
+            percent = 0;
         }
 
         // Calcula a premiação com base na produtividade para o indicador selecionado
         if(real === 0){
             comissao = 0;
             premiacao = 0;
+            percent = 0;
         } else {
             if (indicador === 'gerentecomercial' || indicador === 'gerenteregional') {
                 if (produtividade >= 1.2) {
@@ -152,6 +164,7 @@ function calcularComissao() {
         // Atualiza a projeção de produtividade e a comissão para cada serviço
         document.getElementById(`projecao-${servico}`).innerText = (produtividade * 100).toFixed(2) + '%';
         document.getElementById(`receita-${servico}`).innerText = 'R$ ' + receita.toFixed(2);
+        document.getElementById(`percent-${servico}`).innerText = percent.toFixed(2) + '%';
         document.getElementById(`comissao-${servico}`).innerText = 'R$ ' + comissao.toFixed(2);
         document.getElementById(`premiacao-${servico}`).innerText = 'R$ ' + premiacao.toFixed(2);
     });
