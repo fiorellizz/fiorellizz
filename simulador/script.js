@@ -139,12 +139,13 @@ function calcularComissao() {
 
             if (acelIndividualMovel !== 0){
                 percent = percent + (percent * (acelIndividualMovel / 100));
-                
-            } else if (acelEquipeMovel !== 0){
+            }
+            if (acelEquipeMovel !== 0){
                 percent = percent + (percent * (acelEquipeMovel / 100));
             }
             
             premiacaoParaAcelerar += valorAcelIndividualMovel + valorAcelEquipeMovel;
+            premiacao += valorAcelIndividualMovel + valorAcelEquipeMovel;
         }
 
         // Aplicando aceleradores individuais e de equipe para "Fibra"
@@ -157,11 +158,13 @@ function calcularComissao() {
 
             if(acelIndividualFixa !== 0){
                 percent = percent + (percent * (acelIndividualFixa / 100));
-            } else if (acelEquipeFixa !== 0){
+            }
+            if (acelEquipeFixa !== 0){
                 percent = percent + (percent + (acelEquipeFixa / 100));
             }
 
             premiacaoParaAcelerar += valorAcelIndividualFixa + valorAcelEquipeFixa;
+            premiacao += valorAcelIndividualFixa + valorAcelEquipeFixa;
         }
 
         let comissaoPremiacaoServico = comissao + premiacaoParaAcelerar;
