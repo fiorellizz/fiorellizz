@@ -237,3 +237,16 @@ document.addEventListener("keydown", function(event) {
         calcularComissao();
     }
 });
+
+window.onload = function() {
+    var modal = document.getElementById("modal");
+    var okButton = document.getElementById("okButton");
+
+    // Exibir o modal
+    modal.style.display = "flex";
+
+    // Quando o botão OK for clicado, esconder o modal
+    okButton.onclick = function() {
+        modal.style.display = "none";
+    };
+};

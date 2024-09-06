@@ -1,15 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(images/fundo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #6642D2, #34226C);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+.logo {
+    position: absolute; /* Permitir posicionamento relativo ao body */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+}
+
+.logo img {
+    width: 200px; /* Definir o tamanho da logo */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#okButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .container {
