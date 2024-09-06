@@ -1,6 +1,5 @@
 function calcularComissao() {
-    const indicador = document.getElementById("indicador").value;
-
+    
     //Porcentagens
     const porcentagemComissao = {
         vendedor: {
@@ -10,6 +9,7 @@ function calcularComissao() {
             delta: [0.105, 0.075, 0.025],
             nn: [0.155, 0.095, 0.025],
             sva: [0.105, 0.075, 0.025],
+            terminal: [0, 0, 0],
             terminal1: [0.01, 0.007, 0.005],
             terminal2: [0.005, 0.004, 0.003],
             acessorio: [0.1, 0.075, 0.05]
@@ -21,6 +21,7 @@ function calcularComissao() {
             delta: [0.07, 0.05, 0.01],
             nn: [0.08, 0.06, 0.01],
             sva: [0.07, 0.05, 0.01],
+            terminal: [0, 0, 0],
             terminal1: [0.007, 0.0049, 0.0035],
             terminal2: [0.0035, 0.0025, 0.0018],
             acessorio: [0.035, 0.0263, 0.0175]
@@ -32,6 +33,7 @@ function calcularComissao() {
             delta: [0.03, 0.02, 0.015],
             nn: [0.04, 0.03, 0.015],
             sva: [0.03, 0.02, 0.015],
+            terminal: [0, 0, 0],
             terminal1: [0.004, 0.0028, 0.0020],
             terminal2: [0.002, 0.0014, 0.001],
             acessorio: [0.02, 0.015, 0.01]
@@ -43,13 +45,15 @@ function calcularComissao() {
             delta: [0.025, 0.02, 0.01],
             nn: [0.035, 0.02, 0.01],
             sva: [0.025, 0.02, 0.01],
+            terminal: [0, 0, 0],
             terminal1: [0.0018, 0.0013, 0.0009],
             terminal2: [0.0009, 0.0006, 0.0005],
             acessorio: [0.0125, 0.0090, 0.0060]
         }
     };
 
-    const servicos = ["pos", "controle", "fibra", "delta", "nn", "sva", "terminal1", "terminal2", "acessorio"];
+    const indicador = document.getElementById("indicador").value;
+    const servicos = ["pos", "controle", "fibra", "delta", "nn", "sva", "terminal", "terminal1", "terminal2", "acessorio"];
     
     let apenasComissao = 0;
     let apenasPremiacaoComAcelerador = 0;
@@ -58,12 +62,45 @@ function calcularComissao() {
 
     servicos.forEach(servico => {
 
-        const meta = parseFloat(document.getElementById(`meta-${servico}`).value) || 0;
-        const real = parseFloat(document.getElementById(`real-${servico}`).value) || 0;
-        const tkm = parseFloat(document.getElementById(`tkm-${servico}`).value) || 0;
-        let produtividade = meta ? real / meta : 0;
-        let percent = 0;
+        //a meta do terminal1 e terminal2 tem que ser o mesmo de terminal
+        let meta;
 
+        if (servico === 'terminal1' || servico === 'terminal2') {
+            const metaTerminal = parseFloat(document.getElementById(`meta-terminal`).value) || 0;
+            meta = metaTerminal;
+        } else {
+            meta = parseFloat(document.getElementById(`meta-${servico}`).value) || 0;
+        }
+
+        //o real do terminal tem que ser a soma do terminal1 e terminal2
+        let real;
+
+        if (servico === 'terminal') {
+            const realTerminal1 = parseFloat(document.getElementById(`real-terminal1`).value) || 0;
+            const realTerminal2 = parseFloat(document.getElementById(`real-terminal2`).value) || 0;
+            real = realTerminal1 + realTerminal2;
+        } else {
+            real = parseFloat(document.getElementById(`real-${servico}`).value) || 0;
+        }
+
+        const tkm = parseFloat(document.getElementById(`tkm-${servico}`).value) || 0;
+        
+        //a produtividade de terminal1 e terminal2 tem que ser a mesma de terminal
+        let produtividade;
+        if (servico === 'terminal1' || servico === 'terminal2') {
+            // Produtividade de terminal1 e terminal2 será igual à de terminal
+            const metaTerminal = parseFloat(document.getElementById(`meta-terminal`).value) || 0;
+            const realTerminal1 = parseFloat(document.getElementById(`real-terminal1`).value) || 0;
+            const realTerminal2 = parseFloat(document.getElementById(`real-terminal2`).value) || 0;
+            
+            // Produtividade do terminal como base para terminal1 e terminal2
+            produtividade = metaTerminal ? (realTerminal1 + realTerminal2) / metaTerminal : 0;
+        } else {
+            // Produtividade normal para os outros serviços
+            produtividade = meta ? real / meta : 0;
+        }
+
+        let percent = 0;
         let comissao = 0;
         let premiacao = 0;
         let receita = 0;
@@ -73,6 +110,8 @@ function calcularComissao() {
         if (indicador === 'vendedor') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.025; // 2,5% da receita
+            } else if (servico === 'terminal') {
+                comissao = receita * 0; // 0% da receita
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0025; // 0,25% da receita
             } else if (servico === 'terminal2') {
@@ -83,6 +122,8 @@ function calcularComissao() {
         } else if (indicador === 'gerenteloja') {
             if (servico === 'pos' || servico === 'controle' || servico === 'delta' || servico === 'sva' || servico === 'nn' || servico === 'fibra') {
                 comissao = receita * 0.02; // 2% da receita
+            } else if (servico === 'terminal') {
+                comissao = receita * 0; // 0,18% da receita
             } else if (servico === 'terminal1') {
                 comissao = receita * 0.0018; // 0,18% da receita
             } else if (servico === 'terminal2') {
@@ -125,7 +166,6 @@ function calcularComissao() {
                 }
             }
         }
-
         
         let premiacaoParaAcelerar = premiacao;
 
@@ -174,12 +214,18 @@ function calcularComissao() {
         comissaoReceita += comissao + premiacao;
         comissaoReceitaAcelerada += comissaoPremiacaoServico;
 
-        // Atualiza a projeção de produtividade e a comissão para cada serviço
-        document.getElementById(`projecao-${servico}`).innerText = (produtividade * 100).toFixed(2) + '%';
-        document.getElementById(`receita-${servico}`).innerText = 'R$ ' + receita.toFixed(2);
-        document.getElementById(`percent-${servico}`).innerText = percent.toFixed(2) + '%';
-        document.getElementById(`comissao-${servico}`).innerText = 'R$ ' + comissao.toFixed(2);
-        document.getElementById(`premiacao-${servico}`).innerText = 'R$ ' + premiacao.toFixed(2);
+        if (servico === 'terminal') {
+            document.getElementById(`real-${servico}`).innerText = real;
+        }
+
+        if (servico !== 'terminal') {
+            document.getElementById(`projecao-${servico}`).innerText = (produtividade * 100).toFixed(2) + '%';
+            document.getElementById(`receita-${servico}`).innerText = 'R$ ' + receita.toFixed(2);
+            document.getElementById(`percent-${servico}`).innerText = percent.toFixed(2) + '%';
+            document.getElementById(`comissao-${servico}`).innerText = 'R$ ' + comissao.toFixed(2);
+            document.getElementById(`premiacao-${servico}`).innerText = 'R$ ' + premiacao.toFixed(2);
+        }
+        
     });
 
     // Exibe o resultado final
