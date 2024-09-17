@@ -10,9 +10,9 @@ function calcularComissao() {
             nn: [0.155, 0.095, 0.025],
             sva: [0.105, 0.075, 0.025],
             terminal: [0, 0, 0],
-            terminal1: [0.01, 0.007, 0.005],
-            terminal2: [0.005, 0.004, 0.003],
-            acessorio: [0.1, 0.075, 0.05]
+            terminal1: [0.0075, 0.0045, 0.0025],
+            terminal2: [0.0035, 0.002, 0.001],
+            acessorio: [0.075, 0.050, 0.025]
         },
         gerenteloja: {
             pos: [0.08, 0.06, 0.01],
@@ -22,9 +22,9 @@ function calcularComissao() {
             nn: [0.08, 0.06, 0.01],
             sva: [0.07, 0.05, 0.01],
             terminal: [0, 0, 0],
-            terminal1: [0.007, 0.0049, 0.0035],
-            terminal2: [0.0035, 0.0025, 0.0018],
-            acessorio: [0.035, 0.0263, 0.0175]
+            terminal1: [0.0052, 0.0031, 0.0017],
+            terminal2: [0.0024, 0.0014, 0.0007],
+            acessorio: [0.0262, 0.0175, 0.0087]
         },
         gerentecomercial: {
             pos: [0.04, 0.03, 0.015],
