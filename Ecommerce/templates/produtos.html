@@ -7,33 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="/static/src/styles/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <link rel="shortcut icon" href="src/images/logoreduzida.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/src/images/logoreduzida.png" type="image/x-icon">
 
-    <title>Ecommerce - 4R</title>
+    <title>Produtos - 4R</title>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
             
-            <i><img id="nav-logo" src="src/images/Logo.png" width="64" alt="Imagem da logo"></i>
+            <a href="index.html"><img id="nav-logo" src="/static/src/images/Logo.png" width="64" alt="Imagem da logo"></a>
 
             <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
                 <li class="nav-item">
-                    <a href="#menu">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
+                    <a href="#menu">Categorias</a>
                 </li>
             </ul>
 
@@ -49,13 +43,7 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
+                    <a href="#menu">Categorias</a>
                 </li>
             </ul>
 
@@ -66,34 +54,10 @@
     </header>
 
     <main id="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div id="cta">
-                <h1 class="title">
-                    O sucesso depende de
-                    <span>você</span>
-                </h1>
-
-                <p class="description">
-                    Aqui seus sonhos se tornam cada vez mais reais
-                </p>
-
-                <div id="cta_buttons">
-                    <a href="#" class="btn-default">
-                        Ver produtos
-                    </a>
-                </div>
-
-            </div>
-
-            <div id="banner">
-                <img src="src/images/boneco.png" alt="">
-            </div>
-        </section>
 
         <section id="menu">
-            <h2 class="section-title">Produtos</h2>
-            <h3 class="section-subtitle">Nossos produtos especiais</h3>
+
+            <h3 class="section-subtitle-products">Eletronicos</h3>
 
             <div id="dishes">
                 <div class="dish">
@@ -101,7 +65,7 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/FoneOuvidoJBL.png" class="dish-image" alt="">
+                    <img src="/static/src/images/FoneOuvidoJBL.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
                         Fone de ouvido JBL
@@ -133,7 +97,7 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/CarregadorPortatil.png" class="dish-image" alt="">
+                    <img src="/static/src/images/CarregadorPortatil.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
                         Carregador Portátil
@@ -165,7 +129,7 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/CaixaDeSomJBL2.png" class="dish-image" alt="">
+                    <img src="/static/src/images/CaixaDeSomJBL2.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
                         Caixa de som JBL
@@ -197,7 +161,7 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/TvSmart43.png" class="dish-image" alt="">
+                    <img src="/static/src/images/TvSmart43.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
                         TV Smart 43" 4k
@@ -224,73 +188,144 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="testimonials">
-            <img src="src/images/boneco.png" id="testimonial_chef" alt="">
+            <h3 class="section-subtitle-products">Cuidados Pessoais</h3>
 
-            <div id="testimonials_content">
-                <h2 class="section-title">
-                    Depoimentos
-                </h2>
-                <h3 class="section-subtitle">
-                    O que os vendedores falam sobre nós
-                </h3>
-
-                <div id="feedbacks">
-                    <div class="feedback">
-                        <img src="src/images/Catharina.png" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-                            <p>
-                                Catharina Goulart
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Nossa, que maravilha essa campanha da 4R. 
-                                <br>
-                                Consegui resgatar um fogão 4 bocas para minha nova casa!"
-                            </p>
-                        </div>
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <div class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                    <img src="/static/src/images/EscovaSecadora.png" class="dish-image" alt="">
 
-                        <div class="feedback-content">
-                            <p>
-                                Fulana de Tal
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
-                            </p>
-                        </div>
+                    <h3 class="dish-title">
+                        Escova Secadora
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>4R$ 199,90</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
                     </div>
                 </div>
 
-                <button class="btn-default">
-                    Ver mais avaliações
-                </button>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/static/src/images/SecadorCabelo.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Secador de Cabelo
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>4R$ 159,99</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/static/src/images/BarbeadorEletrico.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Barbeador Elétrico
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>4R$ 349,99</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="/static/src/images/MaquinaCabelo.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Máquina de Cabelo
+                    </h3>
+
+                    <span class="dish-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>4R$ 199,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
+        <img src="/static/src/images/wave.svg" alt="">
 
         <div id="footer_items">
             <span id="copyright">
@@ -312,7 +347,7 @@
             </div>
         </div>
     </footer>
-    <script src="src/javascript/script.js"></script>
+    <script src="/static/src/javascript/script.js"></script>
 </body>
 
 </html>
