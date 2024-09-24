@@ -49,6 +49,12 @@
     text-align: center;
 }
 
+.dish-quantity {
+    color: #434343;
+    font-weight: bold;
+    text-align: center;
+}
+
 .dish-rate i {
     color: var(--color-primary-6);
 }
