@@ -2,7 +2,7 @@ const produtos = {
     "Diversos": [
         {
             nome: "Fone de Ouvido JBL",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Som potente com design confortável.",
             imagem: "static/src/images/FoneOuvidoJBL.png",
             preco: "4R$ 199,00",
             quantidade: 5,
@@ -10,7 +10,7 @@ const produtos = {
         },
         {
             nome: "Carregador Portátil",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Carregue seus dispositivos em qualquer lugar.",
             imagem: "static/src/images/CarregadorPortatil.png",
             preco: "4R$ 159,00",
             quantidade: 4,
@@ -18,7 +18,7 @@ const produtos = {
         },
         {
             nome: "Caixa de Som JBL",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Áudio de alta qualidade para festas e eventos.",
             imagem: "static/src/images/CaixaDeSomJBL.png",
             preco: "4R$ 349,00",
             quantidade: 2,
@@ -26,7 +26,7 @@ const produtos = {
         },
         {
             nome: "Smartwatch Xiaomi",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Monitoramento fitness e notificações no pulso.",
             imagem: "static/src/images/SmartwatchXiaomi.png",
             preco: "4R$ 279,90",
             quantidade: 2,
@@ -34,7 +34,7 @@ const produtos = {
         },
         {
             nome: "TV Smart 4K",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Experiência de entretenimento em altíssima resolução.",
             imagem: "static/src/images/TvSmart43.png",
             preco: "4R$ 3.599,00",
             quantidade: 3,
@@ -42,7 +42,7 @@ const produtos = {
         },
         {
             nome: "Notebook Dell 15",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Desempenho rápido para trabalho e lazer.",
             imagem: "static/src/images/NotebookDellInspiron15.png",
             preco: "4R$ 3.599,00",
             quantidade: 1,
@@ -50,7 +50,7 @@ const produtos = {
         },
         {
             nome: "Echo Dot",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Controle sua casa inteligente com comandos de voz.",
             imagem: "static/src/images/EchoDot.png",
             preco: "4R$ 389,00",
             quantidade: 4,
@@ -58,7 +58,7 @@ const produtos = {
         },
         {
             nome: "Máquina de Café",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Café fresco e saboroso em minutos.",
             imagem: "static/src/images/MaquinaDeCafe.png",
             preco: "4R$ 399,00",
             quantidade: 2,
@@ -66,7 +66,7 @@ const produtos = {
         },
         {
             nome: "Airfryer Mondial",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Cozinha saudável com frituras sem óleo.",
             imagem: "static/src/images/FritadeiraAirfryer.png",
             preco: "4R$ 399,00",
             quantidade: 2,
@@ -74,7 +74,7 @@ const produtos = {
         },
         {
             nome: "AirPods Apple",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Áudio sem fio de alta qualidade com Siri integrada.",
             imagem: "static/src/images/AirPodsApple.png",
             preco: "4R$ 1.199,00",
             quantidade: 2,
@@ -82,7 +82,7 @@ const produtos = {
         },
         {
             nome: "Smartwatch Samsung",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Saúde e conectividade no seu pulso.",
             imagem: "static/src/images/SmartwatchSamsungGalaxyWatch4.png",
             preco: "4R$ 1.499,00",
             quantidade: 2,
@@ -90,7 +90,7 @@ const produtos = {
         },
         {
             nome: "Kindle Paperwhite",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Leitura confortável com tela antirreflexo.",
             imagem: "static/src/images/KindlePaperwhite.png",
             preco: "4R$ 649,90",
             quantidade: 2,
@@ -98,7 +98,7 @@ const produtos = {
         },
         {
             nome: "Fone de Ouvido JBL",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Áudio potente e conectividade Bluetooth.",
             imagem: "static/src/images/FoneJBL510BT.png",
             preco: "4R$ 249,90",
             quantidade: 2,
@@ -106,7 +106,7 @@ const produtos = {
         },
         {
             nome: "Caixa Boombox 3",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Potência e graves profundos para qualquer lugar.",
             imagem: "static/src/images/CaixaDeSomJBLBoombox3.png",
             preco: "4R$ 3.299,00",
             quantidade: 3,
@@ -114,7 +114,7 @@ const produtos = {
         },
         {
             nome: "Caixa Charge 5",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Portátil com som de extrema qualidade.",
             imagem: "static/src/images/CaixaDeSomJBLCharge5.png",
             preco: "4R$ 999,00",
             quantidade: 2,
@@ -122,7 +122,7 @@ const produtos = {
         },
         {
             nome: "Smart TV LED 4K",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Qualidade de imagem superior para filmes e séries.",
             imagem: "static/src/images/SmartTVLED.png",
             preco: "4R$ 2.999,00",
             quantidade: 1,
@@ -130,7 +130,7 @@ const produtos = {
         },
         {
             nome: "Drone DJI Mini 2",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Captura aérea com alta precisão e facilidade.",
             imagem: "static/src/images/DroneDJIMini.png",
             preco: "4R$ 4.999,00",
             quantidade: 1,
@@ -138,7 +138,7 @@ const produtos = {
         },
         {
             nome: "Mochila de Viagem",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Confortável e resistente para suas aventuras.",
             imagem: "static/src/images/MochiladeViagem.png",
             preco: "4R$ 599,90",
             quantidade: 1,
@@ -148,7 +148,7 @@ const produtos = {
     "Automotivo": [
         {
             nome: "Kit de Ferramentas",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Completo para manutenção do seu veículo.",
             imagem: "static/src/images/KitdeFerramentas.png",
             preco: "4R$ 399,90",
             quantidade: 2,
@@ -156,7 +156,7 @@ const produtos = {
         },
         {
             nome: "Capa de Banco",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Proteção e conforto para os assentos do carro.",
             imagem: "static/src/images/CapadeBanco.png",
             preco: "4R$ 99,90",
             quantidade: 2,
@@ -164,7 +164,7 @@ const produtos = {
         },
         {
             nome: "Kit de Limpeza",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Mantenha seu carro sempre limpo e brilhante.",
             imagem: "static/src/images/KitdeLimpeza.png",
             preco: "4R$ 129,90",
             quantidade: 2,
@@ -172,7 +172,7 @@ const produtos = {
         },
         {
             nome: "Bomba de Ar",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Ideal para inflar pneus com praticidade.",
             imagem: "static/src/images/BombadeAr.png",
             preco: "4R$ 149,90",
             quantidade: 2,
@@ -180,7 +180,7 @@ const produtos = {
         },
         {
             nome: "Suporte para Celular",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Segurança e conveniência para usar o celular no carro.",
             imagem: "static/src/images/SuporteparaCelular.png",
             preco: "4R$ 39,90",
             quantidade: 2,
@@ -188,7 +188,7 @@ const produtos = {
         },
         {
             nome: "Rádio Automotivo",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Som de qualidade para suas viagens.",
             imagem: "static/src/images/RadioAutomotivo.png",
             preco: "4R$ 349,90",
             quantidade: 2,
@@ -196,7 +196,7 @@ const produtos = {
         },
         {
             nome: "Trava de Volante",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Segurança extra contra furtos.",
             imagem: "static/src/images/TravadeVolante.png",
             preco: "4R$ 79,90",
             quantidade: 2,
@@ -206,7 +206,7 @@ const produtos = {
     "Bebidas":[
         {
             nome: "Cerveja Heineken",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Sabor puro e refrescante em cada garrafa.",
             imagem: "static/src/images/CaixaCervejaHeineken.png",
             preco: "4R$ 119,90",
             quantidade: 3,
@@ -214,7 +214,7 @@ const produtos = {
         },
         {
             nome: "Vinho Tinto Chileno",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Elegante e encorpado, ideal para momentos especiais.",
             imagem: "static/src/images/VinhoTintoChileno.png",
             preco: "4R$ 139,90",
             quantidade: 2,
@@ -222,7 +222,7 @@ const produtos = {
         },
         {
             nome: "Whisky Johnnie Walker",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Clássico e sofisticado para apreciadores.",
             imagem: "static/src/images/WhiskyJohnnie.png",
             preco: "4R$ 179,90",
             quantidade: 2,
@@ -230,7 +230,7 @@ const produtos = {
         },
         {
             nome: "Vodka Absolut",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Pura e versátil, perfeita para coquetéis.",
             imagem: "static/src/images/VodkaAbsolut.png",
             preco: "4R$ 199,90",
             quantidade: 2,
@@ -238,7 +238,7 @@ const produtos = {
         },
         {
             nome: "Cafe em Capsulas",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Praticidade e sabor intenso em cada dose.",
             imagem: "static/src/images/CafeemCapsulas.png",
             preco: "4R$ 149,90",
             quantidade: 2,
@@ -246,7 +246,7 @@ const produtos = {
         },
         {
             nome: "Energetico Red Bull",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Energia extra para o seu dia.",
             imagem: "static/src/images/EnergeticoRedBull.png",
             preco: "4R$ 54,90",
             quantidade: 2,
