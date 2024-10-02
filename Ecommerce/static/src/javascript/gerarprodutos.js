@@ -256,7 +256,7 @@ const produtos = {
     "Beleza e Maquiagem":[
         {
             nome: "Base Liquida Matte",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Acabamento aveludado e longa duração.",
             imagem: "static/src/images/BaseLiquidaMatte.png",
             preco: "4R$ 29,90",
             quantidade: 2,
@@ -264,7 +264,7 @@ const produtos = {
         },
         {
             nome: "Paleta de Sombras Nude",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Tons versáteis para qualquer ocasião.",
             imagem: "static/src/images/PaletadeSombrasNude.png",
             preco: "4R$ 99,90",
             quantidade: 2,
@@ -272,7 +272,7 @@ const produtos = {
         },
         {
             nome: "Mascara de Cilios",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Volume e definição para seus cílios.",
             imagem: "static/src/images/MascaradeCilios.png",
             preco: "4R$ 49,90",
             quantidade: 2,
@@ -280,7 +280,7 @@ const produtos = {
         },
         {
             nome: "Batom Liquido Matte",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Cores intensas e efeito opaco duradouro.",
             imagem: "static/src/images/BatonLiquidoMatte.png",
             preco: "4R$ 33,00",
             quantidade: 2,
@@ -288,7 +288,7 @@ const produtos = {
         },
         {
             nome: "Corretivo Liquido",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Cobertura perfeita para imperfeições.",
             imagem: "static/src/images/CorretivoLiquido.png",
             preco: "4R$ 60,00",
             quantidade: 2,
@@ -296,7 +296,7 @@ const produtos = {
         },
         {
             nome: "Blush Compacto",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Toque de cor para um visual saudável.",
             imagem: "static/src/images/BlushCompacto.png",
             preco: "4R$ 22,90",
             quantidade: 2,
@@ -304,7 +304,7 @@ const produtos = {
         },
         {
             nome: "Iluminador Facial",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Brilho sutil para destacar sua pele.",
             imagem: "static/src/images/IluminadorFacial.png",
             preco: "4R$ 25,90",
             quantidade: 2,
@@ -312,7 +312,7 @@ const produtos = {
         },
         {
             nome: "Delineador Liquido",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Traço preciso e duradouro.",
             imagem: "static/src/images/DelineadorLiquido.png",
             preco: "4R$ 23,90",
             quantidade: 2,
@@ -320,7 +320,7 @@ const produtos = {
         },
         {
             nome: "Po Compacto",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Finaliza a maquiagem com efeito matte.",
             imagem: "static/src/images/PoCompacto.png",
             preco: "4R$ 21,90",
             quantidade: 2,
