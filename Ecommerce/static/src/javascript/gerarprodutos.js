@@ -327,14 +327,296 @@ const produtos = {
             avaliacao: 100
         },
     ],
+    "Cama e Banho":[
+        {
+            nome: "Jogo de Cama Solteiro",
+            descricao: "Conforto e qualidade para uma boa noite de sono.",
+            imagem: "static/src/images/JogodeCamaSolteiro.png",
+            preco: "4R$ 179,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo de Cama Casal",
+            descricao: "Estilo e conforto para sua cama de casal.",
+            imagem: "static/src/images/JogodeCamaCasal.png",
+            preco: "4R$ 175,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo de Cama Solteiro",
+            descricao: "Suavidade e durabilidade em uma peça acessível.",
+            imagem: "static/src/images/JogodeCamaSolteiro2.png",
+            preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Pijama Feminino",
+            descricao: "Confortável e ideal para suas noites de descanso.",
+            imagem: "static/src/images/PijamaFeminino.png",
+            preco: "4R$ 160,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Travesseiros Nasa",
+            descricao: "Tecnologia e conforto para um sono revigorante.",
+            imagem: "static/src/images/TravesseirosNasa.png",
+            preco: "4R$ 99,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Travesseiro Buddemeyer",
+            descricao: "Maciez e suporte para suas noites de descanso.",
+            imagem: "static/src/images/TravesseiroBuddemeyer.png",
+            preco: "4R$ 150,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+    ],
+    "Camping":[
+        {
+            nome: "Barraca de Camping",
+            descricao: "Resistente e espaçosa, ideal para aventuras ao ar livre.",
+            imagem: "static/src/images/BarracadeCamping.png",
+            preco: "4R$ 499,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Saco de Dormir",
+            descricao: "Confortável e compacto, perfeito para uma boa noite.",
+            imagem: "static/src/images/SacodeDormir.png",
+            preco: "4R$ 199,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Fogareiro Portatil",
+            descricao: "Prático e eficiente para cozinhar em acampamentos.",
+            imagem: "static/src/images/FogareiroPortatil.png",
+            preco: "4R$ 149,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Mochila Cargueira 70L",
+            descricao: "Espaçosa e ergonômica para carregar tudo o que precisa.",
+            imagem: "static/src/images/MochilaCargueira70L.png",
+            preco: "4R$ 399,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Lanterna de Cabeça",
+            descricao: "Iluminação potente e mãos livres para suas atividades noturnas.",
+            imagem: "static/src/images/LanternadeCabeça.png",
+            preco: "4R$ 129,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Colchao Inflavel Casal",
+            descricao: "Conforto extra para acampar com comodidade.",
+            imagem: "static/src/images/ColchaoInflavelCasal.png",
+            preco: "4R$ 299,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Cadeira Dobravel",
+            descricao: "Compacta e fácil de transportar, ideal para relaxar no camping.",
+            imagem: "static/src/images/CadeiraDobravel.png",
+            preco: "4R$ 89,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Bolsa Termica 24L",
+            descricao: "Mantém seus alimentos e bebidas frescos por mais tempo.",
+            imagem: "static/src/images/BolsaTermica24L.png",
+            preco: "4R$ 159,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Canivete Multifuncional",
+            descricao: "Ferramenta versátil com várias funções para diversas situações.",
+            imagem: "static/src/images/CaniveteMultifuncional.png",
+            preco: "4R$ 349,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Kit de Panelas",
+            descricao: "Completo e durável, perfeito para cozinhar em suas aventuras.",
+            imagem: "static/src/images/KitdePanelas.png",
+            preco: "4R$ 788,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+    ],
+    "Churrasco e Camping":[
+        {
+            nome: "Espatulas e Garfos",
+            descricao: "Ferramentas essenciais para manusear alimentos no churrasco.",
+            imagem: "static/src/images/EspatulaseGarfos.png",
+            preco: "4R$ 89,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Grelha de Aco",
+            descricao: "Resistente e durável, perfeita para assar carnes e legumes.",
+            imagem: "static/src/images/GrelhadeAco.png",
+            preco: "4R$ 100,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo de Facas",
+            descricao: "Facas afiadas e de alta qualidade para preparar alimentos com facilidade.",
+            imagem: "static/src/images/JogodeFacas.png",
+            preco: "4R$ 129,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Tabua de Corte",
+            descricao: "Durável e prática, ótima para cortar carnes e preparar acompanhamentos.",
+            imagem: "static/src/images/TabuadeCorte.png",
+            preco: "4R$ 59,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Kit de Marinades",
+            descricao: "Completo para temperar carnes e garantir sabores incríveis.",
+            imagem: "static/src/images/KitdeMarinades.png",
+            preco: "4R$ 49,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo de Pincas e Escovas",
+            descricao: "Conjunto robusto para facilitar o manuseio durante o churrasco.",
+            imagem: "static/src/images/JogodePincaseEscovas.png",
+            preco: "4R$ 160,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Caixa de Cervejas",
+            descricao: "Perfeita para acompanhar o churrasco com bebidas geladas.",
+            imagem: "static/src/images/CaixadeCervejas.png",
+            preco: "4R$ 280,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+    ],
+    "Cuidados Homem":[
+        {
+            nome: "Aparador de Barba",
+            descricao: "Aparador de alta precisão para garantir um acabamento perfeito.",
+            imagem: "static/src/images/AparadordeBarba.png",
+            preco: "4R$ 210,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Kit para Barba",
+            descricao: "Conjunto completo com produtos para manter a barba saudável.",
+            imagem: "static/src/images/KitparaBarba.png",
+            preco: "4R$ 180,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+    ],
+    "Cuidados Pessoais":[
+        {
+            nome: "Escova Secadora",
+            descricao: "Seca e modela ao mesmo tempo.",
+            imagem: "static/src/images/EscovaSecadora.png",
+            preco: "4R$ 199,99",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Secador de Cabelo",
+            descricao: "Alta potência, secagem rápida e sem frizz.",
+            imagem: "static/src/images/SecadordeCabelo.png",
+            preco: "4R$ 159,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Barbeador Eletrico",
+            descricao: "Aparador de alta precisão para garantir um acabamento perfeito.",
+            imagem: "static/src/images/BarbeadorEletrico.png",
+            preco: "4R$ 349,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Maquina de Cabelo",
+            descricao: "Corte profissional e detalhado.",
+            imagem: "static/src/images/MaquinaCabelo.png",
+            preco: "4R$ 199,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Prancha de Cabelo",
+            descricao: "Compacta, alisa e modela com brilho.",
+            imagem: "static/src/images/PranchadeCabelo.png",
+            preco: "4R$ 119,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Aparelho de Depila",
+            descricao: "Depilação eficiente e suave.",
+            imagem: "static/src/images/AparelhodeDepila.png",
+            preco: "4R$ 239,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Massageador Corporal",
+            descricao: "Alivia tensões musculares.",
+            imagem: "static/src/images/MassageadorCorporal.png",
+            preco: "4R$ 179,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Aparelho Gillette",
+            descricao: "Barbear rente e confortável.",
+            imagem: "static/src/images/AparelhoGillette.png",
+            preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Hidratante Corporal",
+            descricao: "Hidrata e perfuma a pele.",
+            imagem: "static/src/images/HidratanteCorporal.png",
+            preco: "4R$ 29,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+    ],
     "Em Breve":[
         {
             nome: "",
             descricao: "",
             imagem: "",
             preco: "",
-            quantidade: 2,
-            avaliacao: 10
+            quantidade: 0,
+            avaliacao: 0
         }
     ]
 };
@@ -343,17 +625,15 @@ function gerarProdutos() {
     const container = document.getElementById('product-sections');
     
     Object.keys(produtos).forEach(categoria => {
-        // Criar título da categoria
+
         const categoriaTitulo = document.createElement('h3');
         categoriaTitulo.classList.add('section-subtitle-products');
         categoriaTitulo.innerText = categoria;
         container.appendChild(categoriaTitulo);
         
-        // Criar o contêiner de produtos
         const categoriaContainer = document.createElement('div');
         categoriaContainer.id = "dishes";
         
-        // Criar os produtos
         produtos[categoria].forEach(produto => {
             const produtoDiv = document.createElement('div');
             produtoDiv.classList.add('dish');
@@ -385,5 +665,4 @@ function gerarProdutos() {
     });
 }
 
-// Chamar a função para gerar os produtos na página
 gerarProdutos();
