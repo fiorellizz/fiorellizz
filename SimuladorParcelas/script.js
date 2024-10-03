@@ -12,8 +12,8 @@ function calcularParcelas() {
     const tbody = document.querySelector("#tabelaParcelas tbody");
     tbody.innerHTML = "";
 
-    taxas.slice(3).forEach((taxa, index) => {
-        const parcelas = index + 4;
+    taxas.forEach((taxa, index) => {
+        const parcelas = index + 1;
         const montante = valorProduto * (1 + (taxa / 100));
         const parcela = montante / parcelas;
 
