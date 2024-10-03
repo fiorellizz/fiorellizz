@@ -14,12 +14,13 @@ function calcularParcelas() {
 
     taxas.forEach((taxa, index) => {
         const montante = valorProduto * (1 + (taxa / 100));
-        const parcela = montante / 18;
+        const parcelas = index + 1;
+        const parcela = montante / parcelas;
 
         const row = `<tr>
-                        <td>${index + 1}x</td>  <!-- Mostra a quantidade de parcelas -->
-                        <td>R$ ${parcela.toFixed(2)}</td> <!-- Valor da parcela -->
+                        <td>${parcelas}x</td>  <!-- Quantidade de parcelas -->
                         <td>R$ ${montante.toFixed(2)}</td> <!-- Montante total -->
+                        <td>R$ ${parcela.toFixed(2)}</td> <!-- Valor da parcela -->
                      </tr>`;
         
         tbody.innerHTML += row;
