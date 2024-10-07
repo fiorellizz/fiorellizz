@@ -609,6 +609,88 @@ const produtos = {
             avaliacao: 100
         },
     ],
+    "Dona de Casa":[
+        {
+            nome: "Liquidificador Oster",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/LiquidificadorOster.png",
+            preco: "4R$ 299,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Panela Pressao",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/PanelaPressao.png",
+            preco: "4R$ 199,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Conjunto Facas",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/ConjuntoFacas.png",
+            preco: "4R$ 129,90",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Tabua Corte",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/TabuaCorte.png",
+            preco: "4R$ 89,90",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Cafeteira Eletrica",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/CafeteiraEletrica.png",
+            preco: "4R$ 119,90",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Conjunto Panelas",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/ConjuntoPanelas.png",
+            preco: "4R$ 399,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Espremedor Frutas",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/EspremedorFrutas.png",
+            preco: "4R$ 167,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Batedeira Planetaria",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/BatedeiraPlanetaria.png",
+            preco: "4R$ 349,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Suporte Talheres",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/SuporteTalheres.png",
+            preco: "4R$ 59,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Ralador Retratil",
+            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            imagem: "static/src/images/RaladorRetratil.png",
+            preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
     "Em Breve":[
         {
             nome: "",
