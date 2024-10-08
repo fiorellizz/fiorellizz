@@ -612,7 +612,7 @@ const produtos = {
     "Dona de Casa":[
         {
             nome: "Liquidificador Oster",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Potente e durável.",
             imagem: "static/src/images/LiquidificadorOster.png",
             preco: "4R$ 299,90",
             quantidade: 2,
@@ -620,7 +620,7 @@ const produtos = {
         },
         {
             nome: "Panela Pressao",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Cozimento rápido e seguro.",
             imagem: "static/src/images/PanelaPressao.png",
             preco: "4R$ 199,90",
             quantidade: 2,
@@ -628,7 +628,7 @@ const produtos = {
         },
         {
             nome: "Conjunto Facas",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Afiadas e resistentes.",
             imagem: "static/src/images/ConjuntoFacas.png",
             preco: "4R$ 129,90",
             quantidade: 3,
@@ -636,7 +636,7 @@ const produtos = {
         },
         {
             nome: "Tabua Corte",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Resistente, ideal para cozinha.",
             imagem: "static/src/images/TabuaCorte.png",
             preco: "4R$ 89,90",
             quantidade: 3,
@@ -644,7 +644,7 @@ const produtos = {
         },
         {
             nome: "Cafeteira Eletrica",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Café rápido e prático.",
             imagem: "static/src/images/CafeteiraEletrica.png",
             preco: "4R$ 119,90",
             quantidade: 3,
@@ -652,7 +652,7 @@ const produtos = {
         },
         {
             nome: "Conjunto Panelas",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Completo, para diversas receitas.",
             imagem: "static/src/images/ConjuntoPanelas.png",
             preco: "4R$ 399,90",
             quantidade: 2,
@@ -660,7 +660,7 @@ const produtos = {
         },
         {
             nome: "Espremedor Frutas",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Extração eficiente.",
             imagem: "static/src/images/EspremedorFrutas.png",
             preco: "4R$ 167,90",
             quantidade: 2,
@@ -668,7 +668,7 @@ const produtos = {
         },
         {
             nome: "Batedeira Planetaria",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Versátil e potente.",
             imagem: "static/src/images/BatedeiraPlanetaria.png",
             preco: "4R$ 349,90",
             quantidade: 1,
@@ -676,7 +676,7 @@ const produtos = {
         },
         {
             nome: "Suporte Talheres",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Organização prática.",
             imagem: "static/src/images/SuporteTalheres.png",
             preco: "4R$ 59,90",
             quantidade: 2,
@@ -684,9 +684,291 @@ const produtos = {
         },
         {
             nome: "Ralador Retratil",
-            descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            descricao: "Compacto e funcional.",
             imagem: "static/src/images/RaladorRetratil.png",
             preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
+    "Eletrinhos Domésticos":[
+        {
+            nome: "Liquidificador Philips",
+            descricao: "Potente e eficiente.",
+            imagem: "static/src/images/LiquidificadorPhilips.png",
+            preco: "4R$ 359,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Aspirador Mondial",
+            descricao: "Limpeza prática e rápida.",
+            imagem: "static/src/images/AspiradorMondial.png",
+            preco: "4R$ 180,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Cafeteira Nespresso",
+            descricao: "Café expresso de qualidade.",
+            imagem: "static/src/images/CafeteiraNespresso.png",
+            preco: "4R$ 352,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Micro-ondas Electrolux",
+            descricao: "Descongela e aquece rápido.",
+            imagem: "static/src/images/Micro-ondasElectrolux.png",
+            preco: "4R$ 599,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Airfryer Mondial",
+            descricao: "Fritura saudável e prática.",
+            imagem: "static/src/images/FritadeiraAirfryer.png",
+            preco: "4R$ 499,99",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Ferro Vapor",
+            descricao: "Roupas lisas com menos esforço.",
+            imagem: "static/src/images/FerroVapor.png",
+            preco: "4R$ 189,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Torradeira Britania",
+            descricao: "Torradas crocantes facilmente.",
+            imagem: "static/src/images/TorradeiraBritania.png",
+            preco: "4R$ 190,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Geladeira Electrolux",
+            descricao: "Grande capacidade e eficiência.",
+            imagem: "static/src/images/GeladeiraElectrolux.png",
+            preco: "4R$ 3.199,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Ventilador Mondial",
+            descricao: "Refresca com potência.",
+            imagem: "static/src/images/VentiladorMondial.png",
+            preco: "4R$ 199,90",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
+    "Fitness Saúde":[
+        {
+            nome: "Smartwatch Xiaomi",
+            descricao: "Monitoramento inteligente de atividades.",
+            imagem: "static/src/images/SmartwatchXiaomi2.png",
+            preco: "4R$ 299,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Halteres Ajustaveis",
+            descricao: "Peso regulável para treino personalizado.",
+            imagem: "static/src/images/HalteresAjustaveis.png",
+            preco: "4R$ 239,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Kit Faixa Muvin",
+            descricao: "Ideal para exercícios de resistência.",
+            imagem: "static/src/images/KitFaixaMuvin.png",
+            preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Balanca Xiaomi",
+            descricao: "Precisão no controle de peso.",
+            imagem: "static/src/images/BalancaXiaomi.png",
+            preco: "4R$ 199,90",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
+    "Gamer":[
+        {
+            nome: "Headset HyperX",
+            descricao: "Som imersivo para gamers.",
+            imagem: "static/src/images/HeadsetHyperX.png",
+            preco: "4R$ 299,90",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Teclado Mecanico",
+            descricao: "Precisão e durabilidade.",
+            imagem: "static/src/images/TecladoMecanico.png",
+            preco: "4R$ 170,00",
+            quantidade: 3,
+            avaliacao: 100
+        },
+        {
+            nome: "Mouse Logitech",
+            descricao: "Alta performance e ergonomia.",
+            imagem: "static/src/images/MouseLogitech.png",
+            preco: "4R$ 310,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Cadeira ThunderX3",
+            descricao: "Conforto prolongado para longas sessões.",
+            imagem: "static/src/images/CadeiraThunderX3.png",
+            preco: "4R$ 1.300,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Controle Xbox Series X",
+            descricao: "Conexão sem fio, precisão superior.",
+            imagem: "static/src/images/ControleXboxSeriesX.png",
+            preco: "4R$ 399,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Mousepad SteelSeries",
+            descricao: "Superfície otimizada para controle.",
+            imagem: "static/src/images/MousepadSteelSeriesQcK+.png",
+            preco: "4R$ 160,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Console PlayStation 5",
+            descricao: "Gráficos de última geração e desempenho.",
+            imagem: "static/src/images/PS5.png",
+            preco: "4R$ 4.100,00",
+            quantidade: 1,
+            avaliacao: 100
+        }
+    ],
+    "Jogos":[
+        {
+            nome: "Jogo Tabuleiro Jenga",
+            descricao: "Desafio de equilíbrio e estratégia.",
+            imagem: "static/src/images/JogoTabuleiroJenga.png",
+            preco: "4R$ 100,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo Cartas Uno",
+            descricao: "Diversão rápida e interativa.",
+            imagem: "static/src/images/JogoCartasUno.png",
+            preco: "4R$ 79,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo Banco Imobiliario",
+            descricao: "Clássico de compra e venda de propriedades.",
+            imagem: "static/src/images/JogoBancoImobiliario.png",
+            preco: "4R$ 169,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo Tabuleiro War",
+            descricao: "Estratégia e conquista em territórios.",
+            imagem: "static/src/images/JogoTabuleiroWar.png",
+            preco: "4R$ 160,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo The Game of Life",
+            descricao: "Simulação da vida em um tabuleiro.",
+            imagem: "static/src/images/JogoTheGameofLife.png",
+            preco: "4R$ 179,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo Cartas Exploding",
+            descricao: "Jogo de cartas estratégico e divertido.",
+            imagem: "static/src/images/JogoCartasExplodingKittens.png",
+            preco: "4R$ 170,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Jogo Tabuleiro Clue",
+            descricao: "Jogo de mistério e dedução.",
+            imagem: "static/src/images/JogoTabuleiroClue.png",
+            preco: "4R$ 140,00",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
+    "Lazer em Família":[
+        {
+            nome: "Patins Quad Retratil",
+            descricao: "Patins versátil com ajuste retrátil.",
+            imagem: "static/src/images/PatinsQuadRetratil.png",
+            preco: "4R$ 699,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Patinete Infantil",
+            descricao: "Diversão para os pequenos com segurança.",
+            imagem: "static/src/images/PatineteInfantil.png",
+            preco: "4R$ 150,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Bicicleta Aro 29",
+            descricao: "Bicicleta robusta e confortável para aventuras.",
+            imagem: "static/src/images/BicicletaAro29.png",
+            preco: "4R$ 1.899,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Patinete Street Pro",
+            descricao: "Patinete de alta performance para adultos.",
+            imagem: "static/src/images/PatineteStreetPro.png",
+            preco: "4R$ 900,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Bicicleta Aro 26",
+            descricao: "Bicicleta para trilhas e passeios.",
+            imagem: "static/src/images/BicicletaAro26.png",
+            preco: "4R$ 1.299,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Bicicleta Aro 20",
+            descricao: "Ideal para crianças e adolescentes.",
+            imagem: "static/src/images/BicicletaAro20.png",
+            preco: "4R$ 799,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Skate Infantil Frozen",
+            descricao: "Temático e perfeito para iniciantes.",
+            imagem: "static/src/images/SkateInfantilFrozen.png",
+            preco: "4R$ 139,90",
             quantidade: 2,
             avaliacao: 100
         }
