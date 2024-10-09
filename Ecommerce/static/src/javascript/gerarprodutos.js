@@ -246,7 +246,7 @@ const produtos = {
         },
         {
             nome: "Energetico Red Bull",
-            descricao: "Energia extra para o seu dia.",
+            descricao: "Energia extra para o seu dia a dia.",
             imagem: "static/src/images/EnergeticoRedBull.png",
             preco: "4R$ 54,90",
             quantidade: 2,
@@ -312,7 +312,7 @@ const produtos = {
         },
         {
             nome: "Delineador Liquido",
-            descricao: "Traço preciso e duradouro.",
+            descricao: "Traço preciso, marcante e duradouro.",
             imagem: "static/src/images/DelineadorLiquido.png",
             preco: "4R$ 23,90",
             quantidade: 2,
@@ -428,7 +428,7 @@ const produtos = {
         },
         {
             nome: "Cadeira Dobravel",
-            descricao: "Compacta e fácil de transportar, ideal para relaxar no camping.",
+            descricao: "Compacta para transportar, ideal para camping.",
             imagem: "static/src/images/CadeiraDobravel.png",
             preco: "4R$ 89,90",
             quantidade: 1,
@@ -436,7 +436,7 @@ const produtos = {
         },
         {
             nome: "Bolsa Termica 24L",
-            descricao: "Mantém seus alimentos e bebidas frescos por mais tempo.",
+            descricao: "Mantém seus alimentos e bebidas frescos.",
             imagem: "static/src/images/BolsaTermica24L.png",
             preco: "4R$ 159,90",
             quantidade: 2,
@@ -444,7 +444,7 @@ const produtos = {
         },
         {
             nome: "Canivete Multifuncional",
-            descricao: "Ferramenta versátil com várias funções para diversas situações.",
+            descricao: "Versátil com várias funções para diversas situações.",
             imagem: "static/src/images/CaniveteMultifuncional.png",
             preco: "4R$ 349,90",
             quantidade: 1,
@@ -452,7 +452,7 @@ const produtos = {
         },
         {
             nome: "Kit de Panelas",
-            descricao: "Completo e durável, perfeito para cozinhar em suas aventuras.",
+            descricao: "Completo e durável, perfeito para suas aventuras.",
             imagem: "static/src/images/KitdePanelas.png",
             preco: "4R$ 788,90",
             quantidade: 1,
@@ -470,7 +470,7 @@ const produtos = {
         },
         {
             nome: "Grelha de Aco",
-            descricao: "Resistente e durável, perfeita para assar carnes e legumes.",
+            descricao: "Resistente e durável, perfeita para dias de assar carnes e legumes.",
             imagem: "static/src/images/GrelhadeAco.png",
             preco: "4R$ 100,00",
             quantidade: 2,
@@ -973,6 +973,338 @@ const produtos = {
             avaliacao: 100
         }
     ],
+    "Linha Branca":[
+        {
+            nome: "Geladeira Brastemp 463L",
+            descricao: "Espaçosa e eficiente, com capacidade para 463 litros.",
+            imagem: "static/src/images/GeladeiraBrastemp463L.png",
+            preco: "4R$ 3.299,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Maquina Lavar",
+            descricao: "Desempenho potente e praticidade para o dia a dia.",
+            imagem: "static/src/images/MaquinaLavar.png",
+            preco: "4R$ 2.299,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Fogao Electrolux",
+            descricao: "Design moderno e funcionalidade avançada.",
+            imagem: "static/src/images/FogaoElectrolux.png",
+            preco: "4R$ 1.699,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Micro-ondas Panasonic",
+            descricao: "Rápido e eficiente para aquecer e preparar alimentos.",
+            imagem: "static/src/images/Micro-ondasPanasonic.png",
+            preco: "4R$ 899,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Lava-Loucas Brastemp",
+            descricao: "Praticidade e economia para lavar louças com facilidade.",
+            imagem: "static/src/images/Lava-LoucasBrastemp.png",
+            preco: "4R$ 1.999,90",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        /*
+        {
+            nome: "Ar Condicionado LG",
+            descricao: "Refrigeração eficaz com baixo consumo de energia.",
+            imagem: "static/src/images/ArCondicionadoLG.png",
+            preco: "4R$ 1.599,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        */
+        {
+            nome: "Secadora Electrolux",
+            descricao: "Ideal para secar roupas rapidamente.",
+            imagem: "static/src/images/SecadoraElectrolux.png",
+            preco: "4R$ 1.499,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Freezer Horizontal",
+            descricao: "Grande capacidade para armazenar alimentos congelados.",
+            imagem: "static/src/images/FreezerHorizontal.png",
+            preco: "4R$ 1.299,90",
+            quantidade: 1,
+            avaliacao: 100
+        }
+    ],
+    "Material Escolar":[
+        {
+            nome: "Kit Mochila Barbie",
+            descricao: "Mochila temática perfeita para crianças que adoram a Barbie.",
+            imagem: "static/src/images/KitMochilaBarbie.png",
+            preco: "4R$ 180,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Caixa Kit Papelaria",
+            descricao: "Completo para atividades escolares e artísticas.",
+            imagem: "static/src/images/CaixaKitPapelaria.png",
+            preco: "4R$ 90,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Mochila Homem Aranha",
+            descricao: "Design inspirado no super-herói, ideal para os fãs.",
+            imagem: "static/src/images/KitMochilaHomemAranha.png",
+            preco: "4R$ 210,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Caderno Lapis Borracha",
+            descricao: "Essencial para o dia a dia escolar.",
+            imagem: "static/src/images/KitCadernoLapisBorracha.png",
+            preco: "4R$ 110,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Impressora HP DeskJet",
+            descricao: "Perfeita para imprimir documentos e trabalhos escolares.",
+            imagem: "static/src/images/ImpressoraHPDeskJet.png",
+            preco: "4R$ 380,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Caderno Tilibra 10M",
+            descricao: "Qualidade e durabilidade para anotações diárias.",
+            imagem: "static/src/images/CadernoTilibra10M.png",
+            preco: "4R$ 60,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Calculadora Casio",
+            descricao: "Funções científicas para uso escolar e universitário.",
+            imagem: "static/src/images/CalculadoraCasio.png",
+            preco: "4R$ 129,90",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Canetas Bic Kit",
+            descricao: "Canetas de escrita suave para uso diário.",
+            imagem: "static/src/images/CanetasBicKit.png",
+            preco: "4R$ 30,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Bloco Notas Post-it",
+            descricao: "Ideal para anotar recados e lembretes.",
+            imagem: "static/src/images/BlocoNotasPost-it.png",
+            preco: "4R$ 60,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Organizador Mesa",
+            descricao: "Organize materiais escolares com estilo.",
+            imagem: "static/src/images/OrganizadorMesa.png",
+            preco: "4R$ 210,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Pastas Sanfonadas",
+            descricao: "Ótima para armazenar e organizar documentos.",
+            imagem: "static/src/images/PastasSanfonadas.png",
+            preco: "4R$ 50,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Pen Drive 32GB",
+            descricao: "Armazene e transfira dados de forma prática.",
+            imagem: "static/src/images/PenDrive32GB.png",
+            preco: "4R$ 150,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Kit Canetas 12 Cores",
+            descricao: "Canetas coloridas para anotações e projetos criativos.",
+            imagem: "static/src/images/KitCanetas12Cores.png",
+            preco: "4R$ 60,00",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ],
+    "Moda":[
+        {
+            nome: "Relogio Casio Vintage",
+            descricao: "Clássico e retrô.",
+            imagem: "static/src/images/RelogioCasioVintage.png",
+            preco: "4R$ 399,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Oculos Sol Ray-Ban",
+            descricao: "Design icônico.",
+            imagem: "static/src/images/OculosSolRay-Ban.png",
+            preco: "4R$ 900,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Jaqueta de Couro",
+            descricao: "Moderna e versátil.",
+            imagem: "static/src/images/JaquetaCouroMasculina.png",
+            preco: "4R$ 599,00",
+            quantidade: 1,
+            avaliacao: 100
+        }
+    ],
+    "Tecnologia":[
+        {
+            nome: "Notebook Acer Nitro 5",
+            descricao: "Potente notebook para jogos.",
+            imagem: "static/src/images/NotGamerNitro5.png",
+            preco: "4R$ 4.999,00",
+            quantidade: 1,
+            avaliacao: 100
+        },
+        {
+            nome: "Monitor Samsung",
+            descricao: "Monitor gamer alta performance.",
+            imagem: "static/src/images/MonitorSamsungOdyssey.png",
+            preco: "4R$ 999,00",
+            quantidade: 1,
+            avaliacao: 100
+        }
+    ],
+    "Vouchers e Vales Presentes":[
+        {
+            nome: "Vale Flash",
+            descricao: "Vale Flash no valor de: R$30.",
+            imagem: "static/src/images/Flash.png",
+            preco: "4R$ 30,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Flash",
+            descricao: "Vale Flash no valor de: R$50.",
+            imagem: "static/src/images/Flash.png",
+            preco: "4R$ 50,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Flash",
+            descricao: "Vale Flash no valor de: R$100.",
+            imagem: "static/src/images/Flash.png",
+            preco: "4R$ 100,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Flash",
+            descricao: "Vale Flash no valor de: R$200.",
+            imagem: "static/src/images/Flash.png",
+            preco: "4R$ 200,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Uber",
+            descricao: "Vale Uber no valor de: R$100.",
+            imagem: "static/src/images/Uber.png",
+            preco: "4R$ 100,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Uber",
+            descricao: "Vale Uber no valor de: R$200.",
+            imagem: "static/src/images/Uber.png",
+            preco: "4R$ 200,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Uber",
+            descricao: "Vale Uber no valor de: R$300.",
+            imagem: "static/src/images/Uber.png",
+            preco: "4R$ 300,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Ifood",
+            descricao: "Vale Ifood no valor de: R$100.",
+            imagem: "static/src/images/Ifood.png",
+            preco: "4R$ 100,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Ifood",
+            descricao: "Vale Ifood no valor de: R$200.",
+            imagem: "static/src/images/Ifood.png",
+            preco: "4R$ 200,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Americanas",
+            descricao: "Vale Americanas no valor de: R$100.",
+            imagem: "static/src/images/Americanas.png",
+            preco: "4R$ 100,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Americanas",
+            descricao: "Vale Americanas no valor de: R$200.",
+            imagem: "static/src/images/Americanas.png",
+            preco: "4R$ 200,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Vale Americanas",
+            descricao: "Vale Americanas no valor de: R$500.",
+            imagem: "static/src/images/Americanas.png",
+            preco: "4R$ 500,00",
+            quantidade: 5,
+            avaliacao: 100
+        },
+        {
+            nome: "Voucher Viagem",
+            descricao: "Viagem para Caldas Novas no valor de R$ 2.000,00",
+            imagem: "static/src/images/Viagem.png",
+            preco: "4R$ 2.000,00",
+            quantidade: 2,
+            avaliacao: 100
+        },
+        {
+            nome: "Happy Hour Equipe",
+            descricao: "Um momento de integração, celebrando conquistas.",
+            imagem: "static/src/images/HH.png",
+            preco: "4R$ 1.000,00",
+            quantidade: 2,
+            avaliacao: 100
+        }
+    ]/*,
     "Em Breve":[
         {
             nome: "",
@@ -982,7 +1314,7 @@ const produtos = {
             quantidade: 0,
             avaliacao: 0
         }
-    ]
+    ]*/
 };
 
 function gerarProdutos() {
