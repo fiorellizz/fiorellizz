@@ -1,180 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio Pessoal</title>
-    <meta name="description" content="Portfólio para ser usado para apresentar e mostrar minhas habilidades e competências.">
-    <link rel="shortcut icon" href="images/mcc.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfo</title>
 </head>
 
 <body>
-
     <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png">
-            </a>
+        <div class="logo">
+            <i class="fas fa-code"></i>
         </div>
-
-        <ul class="nav-links">
-            <li class="link"><a href="#inicio">Início</a></li>
-            <li id="link1" class="link"><a href="#habilidades">Habilidades</a></li>
-            <li id="link2" class="link"><a href="#projetos">Projetos</a></li>
-            <!--<li id="link3" class="link"><a href="#sobre">Sobre</a></li>-->
-        </ul>
-        <button><a href="https://linkedin.com/in/fiorellizz/" target="_blank" class="btn">Contrate-me</a></button>
+        <div class="links">
+            <a href="#" class="active">Sobre</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contato</a>
+        </div>
     </nav>
 
-    <header id="inicio" class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>DESENVOLVA TECNOLOGICAMENTE COMIGO</h4>
-            <H1>Olá, eu sou <span>Fiorelli</span>, Engenheiro de Software</H1>
-            <p>
-                Possuo sólidas habilidades em HTML e CSS, além de experiência em programação C. Minha abordagem é pautada por metodologias ágeis, priorizando a entrega eficiente e colaborativa dos projetos.
-            </p>
-            <button><a href="https://linkedin.com/in/fiorellizz/" target="_blank" class="btn">Contrate-me</a></button>
-        </div>
-        <div class="image">
-            <img src="images/mcc.png">
-        </div>
-    </header>
-
-    <section id="habilidades" class="container">
-        <h2 class="header">MINHAS HABILIDADES</h2>
-        <div class="features">
-            <div class="card">
-                <span><i class="ri-money-dollar-box-line"></i></span>
-                <h4>Crie seu site</h4>
-                <p>
-                    Um site harmonioso e eficiente, perfeitamente adaptado às suas necessidades.
-                </p>
-                <a href="https://linkedin.com/in/fiorellizz/" target="_blank">Join Now<i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-bug-line"></i></span>
-                <h4>Corrija seus bugs</h4>
-                <p>
-                    Você tem algum problema em seus códigos? Diga-me, eu vou ajudá-lo a consertar isso.
-                </p>
-                <a href="https://linkedin.com/in/fiorellizz/" target="_blank">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>Economize tempo</h4>
-                <p>
-                    Maximize seu tempo em projetos ao implementar metodologias ágeis e práticas de alta qualidade.
-                </p>
-                <a href="https://linkedin.com/in/fiorellizz/" target="_blank">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-shake-hands-line"></i></span>
-                <h4>Cooperação</h4>
-                <p>
-                    Você quer que trabalhemos juntos? Escreva um e-mail para mim.
-                </p>
-                <a href="mailto:fiorelligui@gmail.com?subject=Gostaria de iniciar um novo Projeto!">Join Now <i class="ri-arrow-right-line"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos" class="container">
-        <h2 class="header">PROJETOS</h2>
-        <p class="sub-header">
-            Nesta secção apresento os meus projetos mais destacados, meticulosamente desenvolvidos com o objetivo de demonstrar e aplicar os meus conhecimentos na respetiva área de atividade.
-        </p>
-        <div class="pricing">
-            <div class="card">
-                <div class="content">
-                    <h3>Ecommerce</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Um Ecommerce interno simples 4R.
-                    </p>
-                    <img class="imgprojects" src="images/Ecommerce.png" alt="">
+    <div class="about">
+        <div class="left">
+            <h3>Desenvolvedor Flutter</h3>
+            <div class="info">
+                <h2>Eu sou Guilherme Fiorelli</h2>
+                <p>Eu crio experiências digitais perfeitas e envolventes.</p>
+                <div class="buttons">
+                    <button class="hire">
+                        Contrate-me
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <!--
+                    <button class="email" id="copyEmail">
+                        Copy Email <i class="far fa-copy"></i>
+                    </button>
+                    -->
                 </div>
-                <a href="Ecommerce/index.html" target="_blank"><button class="btnprojects">Ver agora</button></a>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3>Solow</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Software voltado para o mercado financeiro/empresarial.
-                    </p>
-                    <img class="imgprojects" src="images/solow.png" alt="">
-                </div>
-                <a href="https://github.com/fiorellizz/Solow" target="_blank"><button class="btnprojects">Ver agora</button></a>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3>Simulador</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Simulador de comissão/premiação 4R.
-                    </p>
-                    <img class="imgprojects" src="images/simulador.png" alt="">
-                </div>
-                <a href="SimuladorRemuneraçãoVariável/index.html" target="_blank"><button class="btnprojects">Ver agora</button></a>
             </div>
         </div>
-    </section>
-
-    <!--
-    <section id="sobre" class="container">
-        <h2 class="header">Sobre</h2>
-        <p class="sub-header">
-            Esta seção é dedicada a informações sobre minha trajetória profissional e acadêmica, destacando as experiências e conhecimentos adquiridos ao longo dos anos.
-        </p>
-    </section>
-    -->
-
-    <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <p>
-                Desenvolva tecnologicamente comigo
-            </p>
-            <div class="socials">
-                <a href="https://linkedin.com/in/fiorellizz/" target="_blank"><i class="ri-linkedin-line"></i></a>
-                <a href="https://instagram.com/fiorellizz/" target="_blank"><i class="ri-instagram-line"></i></a>
-                <a href="https://github.com/fiorellizz" target="_blank"><i class="ri-github-line"></i></a>
-            </div>
+        <div class="right">
+            <a class="online" href="#"><i class="fas fa-circle"></i>Disponível Para Trabalho</a>
+            <img src="assets/profile.png">
         </div>
-        <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
-        </div>
-        <div class="column">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privicy Policy</a>
-            <a href="#">Terms & Conditions</a>
-        </div>
-    </footer>
-
-    <div class="copyright">
-        Copyright © 2023 Guilherme Fiorelli Braz Rodrigues. All Rights Reserved.
     </div>
 
-    <script src="script.js"></script>
+    <div class="works">
+        <div class="left">
+            <h3><i class="fas fa-circle"></i>Trabalhos Recentes</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Desenvolvedor Flutter</h5>
+                        <p>2025 - Presente</p>
+                    </div>
+                    <p>Startup Célere</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Analista de Desenvolvimento de Sistemas</h5>
+                        <p>2024 - 2024</p>
+                    </div>
+                    <p>Vivo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="item">
+                <a href="#">Sobre Meu Trabalho</a>
+                <p>Sou estudante de Engenharia de Software, aplicando conhecimentos em Flutter (Dart), Django (Python) e
+                    modelagem de banco de dados para criar soluções eficientes e escaláveis.</p>
+
+            </div>
+            <div class="item">
+                <a href="#">Soluções em Software</a>
+                <p>Maneiras de resolver desafios com abordagens facilitadas.</p>
+            </div>
+            <div class="item">
+                <a href="#">Design Responsivo</a>
+                <p>Garantindo uma experiência de usuário em todos os dispositivos.</p>
+            </div>
+            <div class="item">
+                <a href="#">Pesquisa e Teste</a>
+                <p>Usando insights baseados em dados para informar decisões.</p>
+            </div>
+            <div class="item">
+                <a href="#">Projetos Colaborativos</a>
+                <p>Trabalhar com diversidade nas equipes para dar vida às ideias.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="#">Meu Portfólio</a>
+        <div class="socials">
+            <a href="https://github.com/fiorellizz" target="_blank">Github</a>
+            <a href="https://instagram.com/fiorellizz" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/in/fiorellizz/" target="_blank">LinkedIn</a>
+        </div>
+        <a class="online" href="#"><i class="fas fa-circle"></i>Disponível Para Trabalho</a>
+    </footer>
+
 </body>
 
 </html>
