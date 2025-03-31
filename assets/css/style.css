@@ -97,7 +97,7 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -612,7 +612,7 @@ header.sticky{
         position: relative;
         height: 87vh;
         width: 100%;
-        background-image: url(../img/background.jpg);
+        background-image: url(../images/background.jpg);
         background-size: cover;
         background-position: center;
         display: flex;
