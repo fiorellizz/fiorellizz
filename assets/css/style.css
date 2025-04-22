@@ -368,8 +368,8 @@ header.sticky{
 .row img{
     max-width: 350px;
     min-width: 100%;
-    min-height: 375px;
-    max-height: 375px;
+    min-height: 300px;
+    max-height: 300px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
